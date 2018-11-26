@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/html;charset=utf-8');
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 
@@ -19,8 +20,8 @@ $date = isset($message['date']) ? $message['date'] : "";
 //Smessage['text'] contiene il messaggio dell'utente
 //CODICE:
 
-if($message['text'] == "cos'&egrave; roberto felline?")
-	$text="Un pirla";
+if($message['text'] == "cos'è roberto felline?")
+	$text="Un pirla è";
 else
 	$text="ah ok";
 
