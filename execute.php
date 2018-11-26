@@ -20,10 +20,12 @@ $date = isset($message['date']) ? $message['date'] : "";
 //Smessage['text'] contiene il messaggio dell'utente
 //CODICE:
 
-if($message['text'] == "cos'".urlencode ('%C3%A8')." roberto felline?")
-	$text="Un pirla";
-else
-	$text="ah ok".urlencode ('%C3%A8');
+$messaggio = “L”.urldecode(“%E2%80%99″).”invincibile Hulk”.urldecode(“%E2%80%A6”);
+
+$messaggio = urlencode ($messaggio);
+
+$url = "https://api.telegram.org/bot721091766:AAGx0egXiQu1ja-huaWdVoD_cpmPDHnZSOU/sendMessage?chat_id=".$chatId."&parse_mode=HTML&text=".$messaggio;
+header($url);
 
 //FINE CODICE, INVIO MESSAGGIO
 
