@@ -21,9 +21,9 @@ $date = isset($message['date']) ? $message['date'] : "";
 //CODICE:
 
 if($message['text'] == "cos'".htmlspecialchars('è')." roberto felline?")
-	$text="Un pirla è";
+	$text="Un pirla";
 else
-	$text="ah ok è";
+	$text="ah ok";
 
 //FINE CODICE, INVIO MESSAGGIO
 
