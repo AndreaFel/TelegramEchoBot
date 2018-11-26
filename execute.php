@@ -20,10 +20,10 @@ $date = isset($message['date']) ? $message['date'] : "";
 //Smessage['text'] contiene il messaggio dell'utente
 //CODICE:
 
-if($message['text'] == "cos'è roberto felline?")
+if($message['text'] == "cos'".htmlspecialchars('è')." roberto felline?")
 	$text="Un pirla è";
 else
-	$text="ah ok";
+	$text="ah ok è";
 
 //FINE CODICE, INVIO MESSAGGIO
 
