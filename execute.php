@@ -14,7 +14,15 @@ $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_nam
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
-$text = isset($message['text']) ? "enniente" : "";
+
+//inserire in $text la risposta
+//Smessage['text'] contiene il messaggio dell'utente
+//CODICE:
+
+if($message['text'] == "cos'è roberto felline?")
+	$text="Un pirla";
+
+//FINE CODICE, INVIO MESSAGGIO
 
 $text = trim($text);
 $text = strtolower($text);
