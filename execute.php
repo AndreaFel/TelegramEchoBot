@@ -23,7 +23,7 @@ $date = isset($message['date']) ? $message['date'] : "";
 if($message['text'] == "cos'".htmlspecialchars('è')." roberto felline?")
 	$text="Un pirla";
 else
-	$text="ah ok";
+	$text="ah ok".htmlspecialchars('è');
 
 //FINE CODICE, INVIO MESSAGGIO
 
