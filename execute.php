@@ -20,8 +20,11 @@ $date = isset($message['date']) ? $message['date'] : "";
 //Smessage['text'] contiene il messaggio dell'utente
 //CODICE:
 
-if(isset($message['text']))
-	$text="ok";
+if(isset($message['text'])){
+	if(substr($message['text'], 0, 6 )=="/posta"){
+		$text = substr($message['text'], 6, strlen($message['text'])-6)
+	}
+}
 
 //FINE CODICE, INVIO MESSAGGIO
 
