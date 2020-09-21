@@ -22,7 +22,9 @@ $date = isset($message['date']) ? $message['date'] : "";
 
 if(isset($message['text'])){
 	if(substr($message['text'], 0, 6 )=="/posta"){
-		$text = substr($message['text'], 6, strlen($message['text'])-6)
+		$text = substr($message['text'], 6, strlen($message['text'])-6);
+	}else{
+		$text = "mmh ok";
 	}
 }
 
